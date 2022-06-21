@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+body{font-family: 'IBM Plex Sans KR', sans-serif;}
+
+#headerWrap{background-color: #f5f3f0;}
+.headerTop{width: 1120px;margin: 0 auto;}
+.headerTop h1{
+    width: 180px;height: 38px;float: left;
+    margin: 20px 0;
+}
+.headerTop h1 img{width: 100%;}
+
+.headerTop .navbar{float: right;}
+.headerTop .navbar li{float: left;margin: 30px 35px;}
+.headerTop .navbar li:last-child{margin-right: 0;}
+.headerTop .navbar li a{font-weight: bold;}
+
+
+.sec01{width: 1120px;margin: 0 auto;}
+.sec01 h1{font-size: 40px;font-weight: bolder;
+    margin: 50px 0 30px 0;
+}
+.sec01 p{color:#626262;
+    margin-bottom: 50px;font-size: 18px;}
+
+
+.sec02{width: 1120px;margin: 0 auto;}
+.sec02 li{float: left;
+    margin-right: 20px;margin-bottom: 130px;}
+.sec02 li p{
+    font-size: 14px;color:#666666;
+    margin-bottom: 5px;
+}
+.sec02 li h2{font-size: 20px;}
+.sec02 li img{margin-bottom: 15px;}
+
+
+.sec02 li:nth-child(1){width: 645px;height: 400px;}
+.sec02 li:nth-child(2){width: 455px;height: 400px;
+    margin-right: 0;
+}
+.sec02 li:nth-child(2) .txt{width: 360px;
+    position: relative;}
+.sec02 li:nth-child(2) .txt p{margin-right: 20px;}
+.sec02 li:nth-child(2) .txt p::after{
+    content: "";display: block;
+    width: 10px;height: 10px;
+    border:1px solid #626262
+
+}
+
+
+
+
+
+.sec02 li:nth-child(5){margin-right: 0;}
