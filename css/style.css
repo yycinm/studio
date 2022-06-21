@@ -3,21 +3,38 @@
 body{font-family: 'IBM Plex Sans KR', sans-serif;}
 
 #headerWrap{background-color: #f5f3f0;}
-.headerTop{width: 1120px;margin: 0 auto;}
+
+.headerTop{width: 1120px;margin: 0 auto;
+    position: relative;}
 .headerTop h1{
     width: 180px;height: 38px;float: left;
-    margin: 20px 0;
+    margin: 25px 0;
 }
 .headerTop h1 img{width: 100%;}
 
-.headerTop .navbar{float: right;}
-.headerTop .navbar li{float: left;margin: 30px 35px;}
-.headerTop .navbar li:last-child{margin-right: 0;}
-.headerTop .navbar li a{font-weight: bold;}
+.headerTop .Util{position: absolute;top: 10px;right: 10px;}
+.headerTop .Util li{float: left;margin:0 15px;}
+.headerTop .Util li:last-child{margin-right: 10px;}
+.headerTop .Util li a{font-size: 12px;}
+.headerTop .Util li .triangle::after{
+    content: "";
+    border-top: 5px solid #000000;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid transparent;
+    position: absolute;top: 10px;
+    margin-left: 10px;
+}
+    
 
+.headerTop .navbar{position: absolute;right: 0;top: 45px;}
+.headerTop .navbar li{float: left;margin: 0 30px;}
+.headerTop .navbar li:last-child{margin-right: 0;}
+.headerTop .navbar li a{font-weight: bold;
+    font-size: 17px;}
 
 .sec01{width: 1120px;margin: 0 auto;}
-.sec01 h1{font-size: 40px;font-weight: bolder;
+.sec01 h1{font-size: 40px;font-weight:bolder;
     margin: 50px 0 30px 0;
 }
 .sec01 p{color:#626262;
@@ -34,23 +51,23 @@ body{font-family: 'IBM Plex Sans KR', sans-serif;}
 .sec02 li h2{font-size: 20px;}
 .sec02 li img{margin-bottom: 15px;}
 
+.sec02 li .txt{display: flex;}
+.sec02 li .txt p{margin-right: 8px;}
+.sec02 li .txt .mark::before{
+    content: "";display:inline-block;
+    width: 7px;height: 7px;
+    border-top:1px solid #666666;
+    border-right:1px solid #666666;
+    transform: rotate(45deg);
+    margin-right: 10px;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    display: none;
+ }
 
 .sec02 li:nth-child(1){width: 645px;height: 400px;}
 .sec02 li:nth-child(2){width: 455px;height: 400px;
     margin-right: 0;
 }
-.sec02 li:nth-child(2) .txt{width: 360px;
-    position: relative;}
-.sec02 li:nth-child(2) .txt p{margin-right: 20px;}
-.sec02 li:nth-child(2) .txt p::after{
-    content: "";display: block;
-    width: 10px;height: 10px;
-    border:1px solid #626262
-
-}
-
-
-
-
-
 .sec02 li:nth-child(5){margin-right: 0;}
