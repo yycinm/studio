@@ -61,10 +61,7 @@ body{font-family: 'IBM Plex Sans KR', sans-serif;}
     transform: rotate(45deg);
     margin-right: 10px;
 }
-.swiper-button-next::after,
-.swiper-button-prev::after {
-    display: none;
- }
+
 
 .sec02 li:nth-child(1){width: 645px;height: 400px;}
 .sec02 li:nth-child(2){width: 455px;height: 400px;
