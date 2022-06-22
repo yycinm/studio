@@ -50,6 +50,7 @@ body{font-family: 'IBM Plex Sans KR', sans-serif;}
     margin-bottom: 5px;
 }
 .sec02 li h2{font-size: 20px;}
+.sec02 li .park{margin-top: 15px;}
 .sec02 li img{margin-bottom: 15px;}
 
 .sec02 li .txt{display: flex;}
@@ -62,6 +63,11 @@ body{font-family: 'IBM Plex Sans KR', sans-serif;}
     transform: rotate(45deg);
     margin-right: 10px;
 }
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    display: none;
+ }
+
 
 .section{width: 1120px;margin: 0 auto;}
 /* 중간 1 */
@@ -74,8 +80,8 @@ body{font-family: 'IBM Plex Sans KR', sans-serif;}
 .section .box02 h2{font-size: 20px;margin-bottom: 100px;}
 
 /* 중간 2 */
-.con02 .mySwiper{position: relative;height: 750px;}
-.con02 .swiper-wrapper{
+.con02 .mySwiper02{position: relative;height: 750px;}
+.con02 .swiper-wrapper02{
     /* position: relative; */
     /* overflow: hidden; */
     width: 100%;
@@ -95,7 +101,7 @@ body{font-family: 'IBM Plex Sans KR', sans-serif;}
 }
 .con02 .sBox{
     position: absolute;display: flex;justify-content: space-around;align-items: center;
-    bottom: 0;z-index: 2;
+    bottom: 39px;z-index: 2;
 }
 .con02 .sBox>h1{font-size: 44px;line-height: 60px;width: 40%;margin-right: 30px;}
 .con02 .sBox>h3{font-size: 18px;line-height: 28px;color:#626262;width: 645px;}
@@ -112,31 +118,7 @@ body{font-family: 'IBM Plex Sans KR', sans-serif;}
     position: absolute;right: 0;top: 240px;z-index: 1;
 }
 .prev{position: absolute;top: 240px;z-index: 1;}
-/* .con02 .tWrap03{position: relative;}
-.con02 .tWrap03>h1{
-    font-size: 90px;line-height: 70px;position: absolute;
-    top: 50%;transform: translateY(-50%);left: 50px;
-}
-.con02 .tWrap03 .logo{
-    position: absolute;z-index: 1;opacity: 0.5;
-    left: 50%;top: 50%; transform: translate(-50%,-50%);
-    cursor: pointer;
-}
-.con02 .tWrap03 .logo:hover{opacity: 1;}
 
-
-.con02 .number{width: 80px; display: flex;justify-content: space-around;}
-.con02 .number h6,
-.con02 .number p{font-size: 20px;font-weight: bold;cursor: pointer;margin-bottom: 10px;}
-.con02 h6{color:#999;}
-.con02 p{color:#29cb7e}
-
-.con02 .textWrap{
-    display: flex;justify-content: space-around;align-items: center;
-    margin-bottom: 100px;
-}
-.section .con02 .textWrap>h1{font-size: 44px;line-height: 60px;width: 425px;}
-.con02 .textWrap h3{font-size: 18px;width: 645px;line-height: 28px;color:#626262} */
 
 /* 중간 3 */
 .con03{display: flex;justify-content: space-between;margin-bottom: 100px;}
@@ -179,7 +161,15 @@ body{font-family: 'IBM Plex Sans KR', sans-serif;}
     width: 1120px;
     margin: 0 auto;
     position: relative;
+ 
+}
+
+.swiper.mySwiper2 {
+    width: 1120px;
+    margin: 0 auto;
+    position: relative;
     height: 500px;
+ 
 }
 
 .swiper-pagination {
@@ -194,7 +184,7 @@ body{font-family: 'IBM Plex Sans KR', sans-serif;}
     position: relative;
 }
 
-.swiper-slide img {
+.swiper-wrapper .swiper-slide img {
     margin-bottom: 20px;
 }
 
@@ -265,13 +255,13 @@ body{font-family: 'IBM Plex Sans KR', sans-serif;}
     width: 1120px;
     margin: 0 auto;
     padding: 0 220px 0 144px;
+    position: relative;
 }
 
 .footerWrap>img {
-    height: 31px;
-    width: 58px;
-    bottom: 174px;
-    left: 391px;
+    width: 9%;
+    top: 50px;
+    left: 0px;
 
 }
 
@@ -329,14 +319,14 @@ body{font-family: 'IBM Plex Sans KR', sans-serif;}
     padding: 0 8px 0 0px;
 }
 
-.web_sns {
+.web_sns {position: relative;
     padding: 0 0 100px 0;
 
 }
 .web_sns>ul {
     position: absolute;
-    bottom: 174px;
-    right: 391px;
+    bottom: 203px;
+    right: -162px;
 }
 
 .web_sns>ul>li {
